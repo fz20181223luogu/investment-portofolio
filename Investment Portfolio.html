@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      .header{
+        text-align: center;
+        padding: 20px;
+        font-size: 50px;
+      }
+      .subheader{
+        margin: 20px;
+      }
+      .index{
+        width: 32%;
+        margin: 40px;
+        padding: 20px;
+        border: 1px solid rgb(170,170,170);
+        background-color: rgb(250,250,250);
+      }
+      .large-cap{
+        background-color: rgb(250,211,64);
+        height: 700px;
+      }
+      .growth{
+        background-color: rgb(74,191,125);
+        height: 700px;
+      }
+      .safe{
+        background-color: rgb(64,188,234);
+        height: 700px;
+      }
+      .dividend{
+        background-color: rgb(199,83,155);
+        height: 750px;
+      }
+      .distribution{
+        background-color: rgb(248,113,1);
+        height: 850px;
+      }
+      .distribution-analysis{
+        float: left;
+        margin: 20px;
+        width: 60%;
+      }
+      .cite{
+        margin: 20px;
+      }
+      .news{
+        width: 33%;
+        padding: 20px;
+        float: left;
+      }
+      .news::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .marketing{
+        width: 34%;
+        padding: 20px;
+        float: left;
+      }
+      .marketing::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .financial-analysis{
+        width: 33%;
+        padding: 20px;
+        float: left;
+      }
+      .piechart {
+        width: 400px;
+        height: 400px;
+        margin: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-image: conic-gradient(
+          rgb(248,196,0) 36deg,
+          rgb(14,169,82) 0 180deg,
+          rgb(0,165,228) 0 288deg,
+          rgb(180,26,121) 0
+          );
+       }
+      .piechart-legend {
+         margin: 20px;
+       }
+       .data {
+         float: right;
+         background-color: rgb(230,230,230);
+         border: 2px solid rgb(192,192,192);
+         margin: 20px;
+       }
+       @media (max-width: 600px) {
+         news, marketing, financial-analysis {
+           width: 100%;
+           height: auto;
+         }
+       }
+    </style>
+  </head>
+  <body>
+    <div class="header"><b>Investment Portfolio</b></div>
+    <div class="index">
+      <h1>List of stocks invested</h1>
+      <ul>
+        <li><a href="#Apple">Large Cap: Apple Inc. (AAPL)</a></li>
+        <li><a href="#NVIDIA">Growth Stock: NVIDIA Corporation (NVDA)</a></li>
+        <li><a href="#CN">Safe Stock: Canadian National Railway Company (CNI)</a></li>
+        <li><a href="#RBC">Dividend Stock: Royal Bank of Canada (RBC)</a></li>
+      </ul>
+    </div>
+    <div style="background-color: rgb(193,193,193); padding: 20px">
+      <div id="Apple" class="large-cap">
+        <div class="subheader">
+          <h1><br>Apple</h1>
+        </div>
+        <div class="news">
+          <h2>Recent News</h2>
+            <p>The article I chose is <a href="https://www.usatoday.com/story/tech/2024/05/07/apple-may-event-live-updates/73587122007/"><i>Apple event showcases new iPad Air, iPad Pro, Magic Keyboard and other updates</i></a>.</p>
+            <p>This article showed that apple have upgraded several kinds of its products. Apple introduced Apple Pencil Pro, which supports gyroscope for a better control of the pen. It also showed new magic keyboard which would be thinner and lighter. Apple announced a new iPad Pro which has a new chip and updated cameras better in document scanning. It also presented new iPad Air which the front-facing camera will now be on the landscape edge and the iPads will have spatial audio.</p>
+            <p>I think Apple’s value is going to increase for the next few days, because it has lots of new products released which would attract customers to buy. In this case, Apple can earn more money.</p>
+        </div>
+        <div class="marketing">
+          <h2>Marketing</h2>
+            <p>Types of advertising:</p>
+            <ul>
+              <li><a href="https://www.youtube.com/channel/UCE_M8A5yxnLfW0KghEeajjw">Youtube Channel</a></li>
+              <li>video (example below)</li>
+            </ul>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/XHTrLYShBRQ"></iframe>
+            <p>For the video, it shows its features such as Dynamic Island, new camera, water resistance etc, it projected how it is better than other products. It also showed the phone’s usage in daily lives that builds desire from customers to buy it.</p>
+        </div>
+        <div class="financial-analysis">
+          <h2>Financial Analysis</h2>
+            <h3>Income Statement 2023</h3>
+            <ul>
+              <li>Sales/Revenue: 1.47B</li>
+              <li>Sales Growth: 55.82%</li>
+              <li>Gross Income: 535.7M</li>
+              <li>Gross Income Growth: 66.17%</li>
+              <li>Total Expenses: 168.06M</li>
+              <li>Net Income : 54.71</li>
+              <li>Net Income Growth: -38.96%</li>
+            </ul>
+            <h3>Reflection</h3>
+            <p>The sales revenue gained a lot which indicated that the bank had lots of new business to handle, and the gross income also gained a lot which also hinted that the bank is in good financial condition.</p>
+        </div>
+      </div>	
+      <div id="NVIDIA" class="growth">
+        <div class="subheader">
+          <h1><br>NVIDIA</h1>
+        </div>
+        <div class="news">
+          <h2>Recent News</h2>
+            <p>The article I chose is <a href="https://blogs.nvidia.com/blog/ai-decoded-davinci-resolve/"><i>AI Decoded: New DaVinci Resolve Tools Bring RTX-Accelerated Renaissance to Editors</i></a>.</p>
+            <p>This article showed that the DaVinci Resolve would use the AI tool powered by NVIDIA RTX to make the editing process of video much easier and save lots of time editors spent on batch processing.</p>
+            <p>I think it is good for NVIDIA to make collaboration with DaVinci Resolve to improve the editing experience so that more editors would purchase NVIDIA’s product aiming to seek for a better editing experience, which allows NVIDIA to make more profit.</p>
+        </div>
+        <div class="marketing">
+          <h2>Marketing</h2>
+            <p>Types of advertising:</p>
+            <ul>
+              <li><a href="https://www.youtube.com/@NVIDIAGeForce">Youtube Channel</a></li>
+              <li>video (example below)</li>
+            </ul>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/fj245xMr-BM"></iframe>
+            <p>The scientific sound effects attract customers’ attention. The data used to describe the card gains customers’ interest for they give clear message for them to read. </p>
+        </div>
+        <div class="financial-analysis">
+          <h2>Financial Analysis</h2>
+            <h3>Income Statement 2023</h3>
+            <ul>
+              <li>Sales/Revenue: 26.97B</li>
+              <li>Sales Growth: 0.22%</li>
+              <li>Gross Income: 15.36B</li>
+              <li>Gross Income Growth: -12.13%</li>
+              <li>Total Expenses: 9.78B</li>
+              <li>Net Income : 4.37B</li>
+              <li>Net Income Growth: -55.21%</li>
+            </ul>
+            <h3>Reflection</h3>
+            <p>The sales revenue of NVIDIA had a slight increase which seems that the sales are maintained well, but the gross income decreased a lot which is abnormal compared to recent years. The net income even cut more than half than last year, and I believe it’s probably caused by the decrease in gross income. Another reason is that the US Government restricted shipment of GeForce RTX 4090 to China which let NVIDIA lost lots of customers.</p>
+        </div>
+      </div>
+      <div id="CN" class="safe">
+        <div class="subheader">
+          <h1><br>Canadian National Railway Company</h1>
+        </div>
+        <div class="news">
+          <h2>Recent News</h2>
+            <p>The article I chose is <a href="https://ca.finance.yahoo.com/news/cn-moving-kevrics-landmark-redevelopment-090000061.html"><i>United Steelworkers Ratify New Collective Agreement</i></a>.</p>
+            <p>This article showed that Canadian National Railway will relocate its headquarters to a downtown office building. The CN would begin to move some of the departments starting 2026.</p>
+            <p>I think that this article indicates a good finance status of the CN company because it is having a great finance status and having spare money to rent the building.</p>
+        </div>
+        <div class="marketing">
+          <h2>Marketing</h2>
+            <p>Types of advertising:</p>
+            <ul>
+              <li><a href="cn.ca">Official website</a></li>
+            </ul>
+            <p>On the website, the company showed its system map, which indicates how far their service is reached. By showing the supply chain, it illustrated how their delivery works. By listing statistic data about its services, it shows how well the company did.</p>
+        </div>
+        <div class="financial-analysis">
+          <h2>Financial Analysis</h2>
+            <h3>Income Statement 2023</h3>
+            <ul>
+              <li>Sales/Revenue: 16.83B</li>
+              <li>Sales Growth: -1.63%</li>
+              <li>Gross Income: 7.51B</li>
+              <li>Gross Income Growth: -2.9%</li>
+              <li>Total Expenses: 913M</li>
+              <li>Net Income : 5.63B</li>
+              <li>Net Income Growth: 9.91%</li>
+            </ul>
+            <h3>Reflection</h3>
+            <p>The sales growth and gross income both decreased a bit last year, maybe because of the decreasing need of transporting goods via rail last year. On another hand, CN made a net income growth of almost 10% which is good for them and I believe it’s because of the low expenditure needed for carrying less goods.</p>
+        </div>
+      </div>
+      <div id="RBC" class="dividend">
+        <div class="subheader">
+          <h1><br>Royal Bank of Canada</h1>
+        </div>
+         <div class="news">
+          <h2>Recent News</h2>
+            <p>The article I chose is <a href="https://ca.finance.yahoo.com/news/royal-bank-canada-toronto-regional-120100205.html"><i>Royal Bank of Canada and Toronto Regional Real Estate Board collaborate to bring digital payment solutions to the Canadian real estate industry</i></a>.</p>
+            <p>This article showed that Royal Bank of Canada wants to have collaboration with the Toronto Regional Real Estate Board. The TRREB would like to use RBC’s PayEdge to achieve a fast, seamless, and secure payment process. It also allows real estate brokerages to receive money by a more efficient and secure way rather than using cheques. </p>
+            <p>I think by letting other companies using its PayEdge service, the RBC would earn a lot of money from the service. Besides, PayEdge also allows money transmission much more convenient, which reduced the loss generated through the paying process.</p>
+        </div>
+        <div class="marketing">
+            <h2>Marketing</h2>
+            <p>Types of advertising:</p>
+            <ul>
+              <li><a href="https://www.youtube.com/RBC">Youtube Channel</a></li>
+              <li><a href="https://www.rbcroyalbank.com/">Official website</a></li>
+              <li>video (example below)</li>
+            </ul>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/F2oN5qJ3pHI"></iframe>
+            <p>In the video, It showed situation for a homeowner, a new parent, and today’s head chief, which showed different demographics that the RBC would suit for. The slogan “RBC is a bank for all of you” gains interest from customers to use RBC’s services.</p>
+        </div>
+        <div class="financial-analysis">
+          <h2>Financial Analysis</h2>
+            <h3>Income Statement 2023</h3>
+            <ul>
+              <li>Sales/Revenue: 1.47B</li>
+              <li>Sales Growth: 55.82%</li>
+              <li>Gross Income: 535.7M</li>
+              <li>Gross Income Growth: 66.17%</li>
+              <li>Total Expenses: 168.06M</li>
+              <li>Net Income : 166.7M</li>
+              <li>Net Income Growth: 204.70%</li>
+            </ul>
+            <h3>Reflection</h3>
+            <p>The sales revenue gained a lot which indicated that the bank had lots of new business to handle, and the gross income also gained a lot which also hinted that the bank is in good financial condition. Finally, the net income tripled over the last year, which showed that the company had made lots of money last year.</p>
+        </div>
+      </div>
+      <div id="Distribution" class="distribution">
+        <div class="subheader">
+          <h1><br>Distribution of Investment Amount</h1>
+        </div>
+        <div class="distribution-analysis">
+          <p>First of all, I would like to put 10%, or $10,000, for Apple. Although it's a large cap stock, its net income last year was pretty bad. Another reason is that there wasn't a huge increase over the last year.</p>
+          <p>Next, I would like to put 40%, or $40,000, for NVIDIA. Although it's a large cap stock, I appreciate how the value of the stock had grew over last year. Also, the data of adjacent year (2022 and 2024 up till now) is so outstanding for investing. Also, the company introduced stock split recently which is friendly for me to afford the stock.</p>
+          <p>Then, I would like to put 30%, or $30,000, for Candadian national Railway Company. In its 2023 income statement, the company made a considerable increase in net income, which indicates that the company is making money and I believe that by investing this stock, I can make a decent amount of money. Also, this company is responsible for transporting goods across Canada and sometimes including United States and even Mexico, and its system map, or service range is much more bigger than its main competitor, CPKC.</p>
+          <p>Finally, I would like to put 20%, or $20,000, for Royal Bank of Canada. Through the income statement last year, it made lots of money, which indicates that the stock is in good condition. On another hand, over the past year, the value of this stock is also growing bigger and bigger, and I believe that by investing this stock, I can earn lots of money.</p>
+        </div>
+        <div class="data">
+          <div class="piechart">
+            <span style="position: relative; left: 45px; top: 20px; font-size: 20px">AAPL</br>10%<br>$10,000</span><br>
+            <span style="position: relative; left: 100px; top: 115px; font-size: 30px">NVDA</br>40%<br>$40,000</span><br>
+            <span style="position: relative; left: -90px; top: 40px; font-size: 30px">CNI </br>30%<br>$30,000</span><br>
+            <span style="position: relative; left: -75px; top: -240px; font-size: 30px">RBC </br>20%<br>$20,000</span><br>
+          </div>
+          <div class="piechart-legend">
+            <span style="color:rgb(248,196,0 ); font-size: 30px">■</span>: Large Cap: <a href="#Apple">Apple Inc. (AAPL)</a><br>
+            <span style="color:rgb(14,169,82 ); font-size: 30px">■</span>: Growth Stock: <a href="#NVIDIA">NVIDIA Corporation (NVDA)</a><br>
+            <span style="color:rgb(0,165,228 ); font-size: 30px">■</span>: Safe Stock: <a href="#CN">Canadian National Railway Company (CNI)</a><br>
+            <span style="color:rgb(180,26,121); font-size: 30px">■</span>: Dividend Stock: <a href="#RBC">Royal Bank of Canada (RBC)</a><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cite">
+      <h1>Work Cited</h1>
+      <ul style="font-family: Times New Roman">
+        <li><a href="https://ca.finance.yahoo.com/quote/AAPL">https://ca.finance.yahoo.com/quote/AAPL</a></li>
+        <li><a href="https://ca.finance.yahoo.com/quote/NVDA">https://ca.finance.yahoo.com/quote/NVDA</a></li>
+        <li><a href="https://ca.finance.yahoo.com/quote/CNI">https://ca.finance.yahoo.com/quote/CNI</a></li>
+        <li><a href="https://ca.finance.yahoo.com/quote/RBC">https://ca.finance.yahoo.com/quote/RBC</a></li>
+        <li><a href="https://www.usatoday.com/story/tech/2024/05/07/apple-may-event-live-updates/73587122007/">https://www.usatoday.com/story/tech/2024/05/07/apple-may-event-live-updates/73587122007/</a></li>
+        <li><a href="https://blogs.nvidia.com/blog/ai-decoded-davinci-resolve/">https://blogs.nvidia.com/blog/ai-decoded-davinci-resolve/</a></li>
+        <li><a href="https://ca.finance.yahoo.com/news/cn-moving-kevrics-landmark-redevelopment-090000061.html">https://ca.finance.yahoo.com/news/cn-moving-kevrics-landmark-redevelopment-090000061.html</a></li>
+        <li><a href="https://ca.finance.yahoo.com/news/royal-bank-canada-toronto-regional-120100205.html">https://ca.finance.yahoo.com/news/royal-bank-canada-toronto-regional-120100205.html</a></li>
+        <li><a href="https://www.youtube.com/watch?v=XHTrLYShBRQ">https://www.youtube.com/watch?v=XHTrLYShBRQ</a></li>
+        <li><a href="https://www.youtube.com/watch?v=fj245xMr-BM">https://www.youtube.com/watch?v=fj245xMr-BM</a></li>
+        <li><a href="https://www.youtube.com/@NVIDIAGeForce">https://www.youtube.com/@NVIDIAGeForce</a></li>
+        <li><a href="https://www.cn.ca">https://www.cn.ca</a></li>
+        <li><a href="https://www.youtube.com/user/RBC">https://www.youtube.com/user/RBC</a></li>
+        <li><a href="https://www.rbcroyalbank.com/">https://www.rbcroyalbank.com/</a></li>
+        <li><a href="https://www.youtube.com/watch?v=F2oN5qJ3pHI">https://www.youtube.com/watch?v=F2oN5qJ3pHI</a></li>
+        <li><a href="https://www.marketwatch.com/investing/stock/aapl/financials">https://www.marketwatch.com/investing/stock/aapl/financials</a></li>
+        <li><a href="https://www.marketwatch.com/investing/stock/nvda/financials">https://www.marketwatch.com/investing/stock/nvda/financials</a></li>
+        <li><a href="https://www.marketwatch.com/investing/stock/cni/financials">https://www.marketwatch.com/investing/stock/cni/financials</a></li>
+        <li><a href="https://www.marketwatch.com/investing/stock/rbc/financials">https://www.marketwatch.com/investing/stock/rbc/financials</a></li>
+
+      <ul>
+    </div>
+  </body>
+</html>
